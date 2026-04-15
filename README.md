@@ -64,7 +64,7 @@ The Make scenario runs weekly to:
 
 ### Calculated Fields
 
-```tableau
+tableau
 // Company Tier
 IF [Employee Count Estimate] >= 200 THEN "Tier 1: Enterprise"
 ELSEIF [Employee Count Estimate] >= 50 THEN "Tier 2: Mid-Market"
