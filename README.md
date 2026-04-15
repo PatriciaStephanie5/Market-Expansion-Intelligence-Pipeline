@@ -75,3 +75,16 @@ END
 [Employee Count Estimate] * 0.4 +
 [Open Jobs Count] * 10 * 0.3 +
 LOG([Followers Count] + 1) * 0.3
+
+## Acknowledgments
+
+- Data simulated based on Y Combinator and LinkedIn public information
+- Inspired by Expandly's European market expansion use case
+- Built with [Make](https://www.make.com) and [Tableau Public](https://public.tableau.com)
+- Special thanks to the Apify and Octoparse communities for scraping resources
+
+## Author
+
+**Timba Patricia Stephanie**  
+Junior GTM Data Analyst  
+[GitHub](https://github.com/PatriciaStephanie5)
