@@ -1,0 +1,566 @@
+{
+    "name": "Integration JSON",
+    "flow": [
+        {
+            "id": 1,
+            "module": "json:ParseJSON",
+            "version": 1,
+            "parameters": {
+                "type": ""
+            },
+            "mapper": {
+                "json": "[\r\n  {\r\n    \"company_name\": \"Acme AI\",\r\n    \"website\": \"https://acme.ai\",\r\n    \"location_city\": \"Berlin\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"S24\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Jane Doe (CEO), John Smith (CTO)\",\r\n    \"open_jobs_count\": 3,\r\n    \"industry\": \"Software Development\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 32,\r\n    \"headquarters\": \"Berlin, Germany\",\r\n    \"follower_count\": 1240,\r\n    \"tags\": \"AI, B2B, SaaS, Enterprise\"\r\n  },\r\n  {\r\n    \"company_name\": \"DataFlow Systems\",\r\n    \"website\": \"https://dataflow.io\",\r\n    \"location_city\": \"Munich\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"W25\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Michael Berg (CEO), Anna Klein (CPO)\",\r\n    \"open_jobs_count\": 5,\r\n    \"industry\": \"Information Technology & Services\",\r\n    \"company_size_range\": \"51-200\",\r\n    \"employee_count_estimate\": 145,\r\n    \"headquarters\": \"Munich, Germany\",\r\n    \"follower_count\": 3850,\r\n    \"tags\": \"Data Integration, ETL, Cloud\"\r\n  },\r\n  {\r\n    \"company_name\": \"CloudNative Labs\",\r\n    \"website\": \"https://cloudnative.dev\",\r\n    \"location_city\": \"Amsterdam\",\r\n    \"location_country\": \"Netherlands\",\r\n    \"batch\": \"S23\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Pieter van Dijk (CEO), Emma Jansen (COO)\",\r\n    \"open_jobs_count\": 2,\r\n    \"industry\": \"Software Development\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 28,\r\n    \"headquarters\": \"Amsterdam, Netherlands\",\r\n    \"follower_count\": 890,\r\n    \"tags\": \"Kubernetes, DevOps, B2D\"\r\n  },\r\n  {\r\n    \"company_name\": \"Paris CX\",\r\n    \"website\": \"https://pariscx.fr\",\r\n    \"location_city\": \"Paris\",\r\n    \"location_country\": \"France\",\r\n    \"batch\": \"W24\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Sophie Martin (CEO), Lucas Bernard (CTO)\",\r\n    \"open_jobs_count\": 4,\r\n    \"industry\": \"Software Development\",\r\n    \"company_size_range\": \"51-200\",\r\n    \"employee_count_estimate\": 112,\r\n    \"headquarters\": \"Paris, France\",\r\n    \"follower_count\": 2150,\r\n    \"tags\": \"Customer Experience, CRM, SaaS\"\r\n  },\r\n  {\r\n    \"company_name\": \"Berlin DevTools\",\r\n    \"website\": \"https://berlindevtools.de\",\r\n    \"location_city\": \"Berlin\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"S25\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Thomas Müller (CEO), Laura Weber (CPO)\",\r\n    \"open_jobs_count\": 1,\r\n    \"industry\": \"Developer Tools\",\r\n    \"company_size_range\": \"1-10\",\r\n    \"employee_count_estimate\": 7,\r\n    \"headquarters\": \"Berlin, Germany\",\r\n    \"follower_count\": 450,\r\n    \"tags\": \"Developer Tools, APIs, B2B\"\r\n  },\r\n  {\r\n    \"company_name\": \"Rotterdam Analytics\",\r\n    \"website\": \"https://rotterdamanlytics.nl\",\r\n    \"location_city\": \"Rotterdam\",\r\n    \"location_country\": \"Netherlands\",\r\n    \"batch\": \"W23\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Erik de Vries (CEO), Sanne Bakker (CFO)\",\r\n    \"open_jobs_count\": 0,\r\n    \"industry\": \"Analytics\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 19,\r\n    \"headquarters\": \"Rotterdam, Netherlands\",\r\n    \"follower_count\": 620,\r\n    \"tags\": \"Business Intelligence, Data Visualization\"\r\n  },\r\n  {\r\n    \"company_name\": \"Lyon Health AI\",\r\n    \"website\": \"https://lyonhealth.ai\",\r\n    \"location_city\": \"Lyon\",\r\n    \"location_country\": \"France\",\r\n    \"batch\": \"S24\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Antoine Dubois (CEO), Marie Laurent (CMO)\",\r\n    \"open_jobs_count\": 3,\r\n    \"industry\": \"Health Tech\",\r\n    \"company_size_range\": \"51-200\",\r\n    \"employee_count_estimate\": 178,\r\n    \"headquarters\": \"Lyon, France\",\r\n    \"follower_count\": 3100,\r\n    \"tags\": \"Healthcare, AI, Compliance\"\r\n  },\r\n  {\r\n    \"company_name\": \"Hamburg Logistics\",\r\n    \"website\": \"https://hamburglogistics.de\",\r\n    \"location_city\": \"Hamburg\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"W25\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Klaus Fischer (CEO), Nina Wagner (COO)\",\r\n    \"open_jobs_count\": 2,\r\n    \"industry\": \"Logistics & Supply Chain\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 41,\r\n    \"headquarters\": \"Hamburg, Germany\",\r\n    \"follower_count\": 1100,\r\n    \"tags\": \"Logistics, SaaS, SMB\"\r\n  },\r\n  {\r\n    \"company_name\": \"Amsterdam Fintech\",\r\n    \"website\": \"https://amsterdamfintech.nl\",\r\n    \"location_city\": \"Amsterdam\",\r\n    \"location_country\": \"Netherlands\",\r\n    \"batch\": \"S22\",\r\n    \"status\": \"Acquired\",\r\n    \"founders\": \"Daan Hendriks (CEO), Lisa Visser (CFO)\",\r\n    \"open_jobs_count\": 0,\r\n    \"industry\": \"Financial Services\",\r\n    \"company_size_range\": \"1-10\",\r\n    \"employee_count_estimate\": 9,\r\n    \"headquarters\": \"Amsterdam, Netherlands\",\r\n    \"follower_count\": 2300,\r\n    \"tags\": \"Fintech, Payments, API\"\r\n  },\r\n  {\r\n    \"company_name\": \"Toulouse SpaceTech\",\r\n    \"website\": \"https://toulousespace.fr\",\r\n    \"location_city\": \"Toulouse\",\r\n    \"location_country\": \"France\",\r\n    \"batch\": \"W23\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Claire Moreau (CEO), Hugo Renard (CTO)\",\r\n    \"open_jobs_count\": 7,\r\n    \"industry\": \"Aerospace\",\r\n    \"company_size_range\": \"51-200\",\r\n    \"employee_count_estimate\": 156,\r\n    \"headquarters\": \"Toulouse, France\",\r\n    \"follower_count\": 5200,\r\n    \"tags\": \"Space, Satellite, Deep Tech\"\r\n  },\r\n  {\r\n    \"company_name\": \"Berlin HR Platform\",\r\n    \"website\": \"https://berlinhr.io\",\r\n    \"location_city\": \"Berlin\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"S24\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Markus Schulz (CEO), Julia Richter (CPO)\",\r\n    \"open_jobs_count\": 2,\r\n    \"industry\": \"HR Tech\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 24,\r\n    \"headquarters\": \"Berlin, Germany\",\r\n    \"follower_count\": 780,\r\n    \"tags\": \"HR, Recruiting, SaaS\"\r\n  },\r\n  {\r\n    \"company_name\": \"Paris E-commerce\",\r\n    \"website\": \"https://parisecom.fr\",\r\n    \"location_city\": \"Paris\",\r\n    \"location_country\": \"France\",\r\n    \"batch\": \"W25\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Camille Petit (CEO), Thomas Leroy (CMO)\",\r\n    \"open_jobs_count\": 6,\r\n    \"industry\": \"E-commerce\",\r\n    \"company_size_range\": \"201-500\",\r\n    \"employee_count_estimate\": 320,\r\n    \"headquarters\": \"Paris, France\",\r\n    \"follower_count\": 8900,\r\n    \"tags\": \"E-commerce, Retail, Enterprise\"\r\n  },\r\n  {\r\n    \"company_name\": \"Utrecht GreenTech\",\r\n    \"website\": \"https://utrechtgreentech.nl\",\r\n    \"location_city\": \"Utrecht\",\r\n    \"location_country\": \"Netherlands\",\r\n    \"batch\": \"S23\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Femke Bos (CEO), Lars van den Berg (CTO)\",\r\n    \"open_jobs_count\": 1,\r\n    \"industry\": \"CleanTech\",\r\n    \"company_size_range\": \"1-10\",\r\n    \"employee_count_estimate\": 12,\r\n    \"headquarters\": \"Utrecht, Netherlands\",\r\n    \"follower_count\": 340,\r\n    \"tags\": \"Sustainability, Energy, SaaS\"\r\n  },\r\n  {\r\n    \"company_name\": \"Munich Security\",\r\n    \"website\": \"https://munichsecurity.de\",\r\n    \"location_city\": \"Munich\",\r\n    \"location_country\": \"Germany\",\r\n    \"batch\": \"W24\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Stefan Brandt (CEO), Helga Schwarz (CSO)\",\r\n    \"open_jobs_count\": 4,\r\n    \"industry\": \"Cybersecurity\",\r\n    \"company_size_range\": \"51-200\",\r\n    \"employee_count_estimate\": 98,\r\n    \"headquarters\": \"Munich, Germany\",\r\n    \"follower_count\": 4600,\r\n    \"tags\": \"Cybersecurity, Enterprise, Compliance\"\r\n  },\r\n  {\r\n    \"company_name\": \"Bordeaux AgTech\",\r\n    \"website\": \"https://bordeauxagtech.fr\",\r\n    \"location_city\": \"Bordeaux\",\r\n    \"location_country\": \"France\",\r\n    \"batch\": \"S25\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Julien Fabre (CEO), Élodie Roux (COO)\",\r\n    \"open_jobs_count\": 0,\r\n    \"industry\": \"AgTech\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 22,\r\n    \"headquarters\": \"Bordeaux, France\",\r\n    \"follower_count\": 510,\r\n    \"tags\": \"Agriculture, IoT, SaaS\"\r\n  },\r\n  {\r\n    \"company_name\": \"Eindhoven Industry 4.0\",\r\n    \"website\": \"https://eindhovenindustry.nl\",\r\n    \"location_city\": \"Eindhoven\",\r\n    \"location_country\": \"Netherlands\",\r\n    \"batch\": \"W23\",\r\n    \"status\": \"Active\",\r\n    \"founders\": \"Sander Visser (CEO), Kim de Jong (CTO)\",\r\n    \"open_jobs_count\": 3,\r\n    \"industry\": \"Industrial Automation\",\r\n    \"company_size_range\": \"11-50\",\r\n    \"employee_count_estimate\": 36,\r\n    \"headquarters\": \"Eindhoven, Netherlands\",\r\n    \"follower_count\": 720,\r\n    \"tags\": \"Industry 4.0, IIoT, B2B\"\r\n  }\r\n]\r\n"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "type": {
+                            "label": "Choose a data structure"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "type",
+                        "type": "udt",
+                        "label": "Data structure"
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "json",
+                        "type": "text",
+                        "label": "JSON string",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "module": "google-sheets:addRow",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 6155386
+            },
+            "mapper": {
+                "from": "drive",
+                "mode": "select",
+                "values": {
+                    "tags": "{{1.tags}}",
+                    "batch": "{{1.batch}}",
+                    "status": "{{1.status}}",
+                    "website": "{{1.website}}",
+                    "founders": "{{1.founders}}",
+                    "industry": "{{1.industry}}",
+                    "company_name": "{{1.company_name}}",
+                    "headquarters": "{{1.headquarters}}",
+                    "location_city": "{{1.location_country}}",
+                    "follower_count": "{{1.follower_count}}",
+                    "open_jobs_count": "{{1.open_jobs_count}}",
+                    "location_country": "{{1.location_country}}",
+                    "company_size_range": "{{1.company_size_range}}",
+                    "employee_count_estimate": "{{1.employee_count_estimate}}"
+                },
+                "sheetId": "Master_target_list",
+                "spreadsheetId": "/1K6j8eOq_WmXdTCKbAfEfRi8AmMDJoyp4Dbk7pos-P_I",
+                "includesHeaders": true,
+                "insertDataOption": "INSERT_ROWS",
+                "useColumnHeaders": true,
+                "valueInputOption": "USER_ENTERED",
+                "insertUnformatted": "{{false}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "from": {
+                            "label": "My Drive"
+                        },
+                        "mode": {
+                            "label": "Search by path"
+                        },
+                        "sheetId": {
+                            "label": "Master_target_list"
+                        },
+                        "spreadsheetId": {
+                            "path": [
+                                "Master_target_list"
+                            ]
+                        },
+                        "includesHeaders": {
+                            "label": "Yes"
+                        },
+                        "insertDataOption": {
+                            "mode": "chose",
+                            "label": "Insert rows"
+                        },
+                        "useColumnHeaders": {
+                            "label": "Yes",
+                            "nested": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "company_name",
+                                            "type": "text",
+                                            "label": "company_name (A)"
+                                        },
+                                        {
+                                            "name": "website",
+                                            "type": "text",
+                                            "label": "website (B)"
+                                        },
+                                        {
+                                            "name": "location_city",
+                                            "type": "text",
+                                            "label": "location_city (C)"
+                                        },
+                                        {
+                                            "name": "location_country",
+                                            "type": "text",
+                                            "label": "location_country (D)"
+                                        },
+                                        {
+                                            "name": "batch",
+                                            "type": "text",
+                                            "label": "batch (E)"
+                                        },
+                                        {
+                                            "name": "status",
+                                            "type": "text",
+                                            "label": "status (F)"
+                                        },
+                                        {
+                                            "name": "founders",
+                                            "type": "text",
+                                            "label": "founders (G)"
+                                        },
+                                        {
+                                            "name": "open_jobs_count",
+                                            "type": "text",
+                                            "label": "open_jobs_count (H)"
+                                        },
+                                        {
+                                            "name": "industry",
+                                            "type": "text",
+                                            "label": "industry (I)"
+                                        },
+                                        {
+                                            "name": "company_size_range",
+                                            "type": "text",
+                                            "label": "company_size_range (J)"
+                                        },
+                                        {
+                                            "name": "employee_count_estimate",
+                                            "type": "text",
+                                            "label": "employee_count_estimate (K)"
+                                        },
+                                        {
+                                            "name": "headquarters",
+                                            "type": "text",
+                                            "label": "headquarters (L)"
+                                        },
+                                        {
+                                            "name": "follower_count",
+                                            "type": "text",
+                                            "label": "follower_count (M)"
+                                        },
+                                        {
+                                            "name": "tags",
+                                            "type": "text",
+                                            "label": "tags (N)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(O)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(P)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(Q)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(R)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(S)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(T)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(U)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(V)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(W)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(X)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(Y)"
+                                        },
+                                        {
+                                            "name": "undefined",
+                                            "type": "text",
+                                            "label": "(Z)"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Values in columns",
+                                    "metadata": [
+                                        [
+                                            [
+                                                "company_name",
+                                                "website",
+                                                "location_city",
+                                                "location_country",
+                                                "batch",
+                                                "status",
+                                                "founders",
+                                                "open_jobs_count",
+                                                "industry",
+                                                "company_size_range",
+                                                "employee_count_estimate",
+                                                "headquarters",
+                                                "follower_count",
+                                                "tags"
+                                            ]
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        "valueInputOption": {
+                            "mode": "chose",
+                            "label": "User entered"
+                        },
+                        "insertUnformatted": {
+                            "mode": "edit"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "My Google connection (patriciatstephanie@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "mode",
+                        "type": "select",
+                        "label": "Search Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "select",
+                                "fromAll",
+                                "map"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "insertUnformatted",
+                        "type": "boolean",
+                        "label": "Unformatted",
+                        "required": true
+                    },
+                    {
+                        "name": "valueInputOption",
+                        "type": "select",
+                        "label": "Value input option",
+                        "validate": {
+                            "enum": [
+                                "USER_ENTERED",
+                                "RAW"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "insertDataOption",
+                        "type": "select",
+                        "label": "Insert data option",
+                        "validate": {
+                            "enum": [
+                                "INSERT_ROWS",
+                                "OVERWRITE"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "type": "select",
+                        "label": "Drive",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "drive",
+                                "share",
+                                "team"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spreadsheetId",
+                        "type": "file",
+                        "label": "Spreadsheet Name",
+                        "required": true
+                    },
+                    {
+                        "name": "sheetId",
+                        "type": "select",
+                        "label": "Sheet Name",
+                        "required": true
+                    },
+                    {
+                        "name": "includesHeaders",
+                        "type": "select",
+                        "label": "Table contains headers",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "name": "useColumnHeaders",
+                        "type": "select",
+                        "label": "Use column headers as IDs of the columns",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                true,
+                                false
+                            ]
+                        }
+                    },
+                    {
+                        "name": "values",
+                        "spec": [
+                            {
+                                "name": "company_name",
+                                "type": "text",
+                                "label": "company_name (A)"
+                            },
+                            {
+                                "name": "website",
+                                "type": "text",
+                                "label": "website (B)"
+                            },
+                            {
+                                "name": "location_city",
+                                "type": "text",
+                                "label": "location_city (C)"
+                            },
+                            {
+                                "name": "location_country",
+                                "type": "text",
+                                "label": "location_country (D)"
+                            },
+                            {
+                                "name": "batch",
+                                "type": "text",
+                                "label": "batch (E)"
+                            },
+                            {
+                                "name": "status",
+                                "type": "text",
+                                "label": "status (F)"
+                            },
+                            {
+                                "name": "founders",
+                                "type": "text",
+                                "label": "founders (G)"
+                            },
+                            {
+                                "name": "open_jobs_count",
+                                "type": "text",
+                                "label": "open_jobs_count (H)"
+                            },
+                            {
+                                "name": "industry",
+                                "type": "text",
+                                "label": "industry (I)"
+                            },
+                            {
+                                "name": "company_size_range",
+                                "type": "text",
+                                "label": "company_size_range (J)"
+                            },
+                            {
+                                "name": "employee_count_estimate",
+                                "type": "text",
+                                "label": "employee_count_estimate (K)"
+                            },
+                            {
+                                "name": "headquarters",
+                                "type": "text",
+                                "label": "headquarters (L)"
+                            },
+                            {
+                                "name": "follower_count",
+                                "type": "text",
+                                "label": "follower_count (M)"
+                            },
+                            {
+                                "name": "tags",
+                                "type": "text",
+                                "label": "tags (N)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(O)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(P)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(Q)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(R)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(S)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(T)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(U)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(V)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(W)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(X)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(Y)"
+                            },
+                            {
+                                "name": "undefined",
+                                "type": "text",
+                                "label": "(Z)"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values in columns",
+                        "metadata": [
+                            [
+                                [
+                                    "company_name",
+                                    "website",
+                                    "location_city",
+                                    "location_country",
+                                    "batch",
+                                    "status",
+                                    "founders",
+                                    "open_jobs_count",
+                                    "industry",
+                                    "company_size_range",
+                                    "employee_count_estimate",
+                                    "headquarters",
+                                    "follower_count",
+                                    "tags"
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": false,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu1.make.com",
+        "notes": []
+    }
+}
