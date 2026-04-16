@@ -1,6 +1,6 @@
 # Market Expansion Intelligence Pipeline
 [![Tableau](https://img.shields.io/badge/Tableau-2024.1-blue)] (https://public.tableau.com/app/profile/timba.patricia.stephanie/viz/MarketExpansionDashboard_17760155743840/Dashboard1)
-[![Make](https://img.shields.io/badge/Make-Automation-6D4AFF)](
+[![Make](https://img.shields.io/badge/Make-Automation-6D4AFF)](https://eu1.make.com/1318783/scenarios/5239545/logs/7fca548743284c38b6a9c1495f19492f?showCheckRuns=true&showChangeLog=true)
 
 ## Project Overview
 
@@ -18,8 +18,6 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 **Solution:** An automated pipeline that scrapes YC company data, enriches with LinkedIn firmographics, and visualizes in a sales‑ready dashboard.
 
 ## Technical Architecture
-
-![Architecture Diagram](images/architecture_diagram.png)
 
 | Stage | Tool | Purpose |
 |-------|------|---------|
@@ -40,8 +38,6 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 
 ## Make Automation Workflow
 
-![Make Scenario](images/make_scenario.png)
-
 The Make scenario runs weekly to:
 1. Parse the simulated YC + LinkedIn JSON dataset
 2. Append each company record to Google Sheets
@@ -50,8 +46,6 @@ The Make scenario runs weekly to:
 **Blueprint:** `workflows/make_scenario_blueprint.json`
 
 ## Tableau Dashboard
-
-![Dashboard Screenshot](images/dashboard_screenshot.png)
 
 ### Dashboard Components
 
