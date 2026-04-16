@@ -1,0 +1,17 @@
+company_name,website,location_city,location_country,batch,status,founders,open_jobs_count,industry,company_size_range,employee_count_estimate,headquarters,follower_count,tags
+Acme AI,https://acme.ai,Berlin,Germany,S24,Active,"Jane Doe (CEO), John Smith (CTO)",3,Software Development,11-50,32,"Berlin, Germany",1240,"AI, B2B, SaaS, Enterprise"
+DataFlow Systems,https://dataflow.io,Munich,Germany,W25,Active,"Michael Berg (CEO), Anna Klein (CPO)",5,Information Technology & Services,51-200,145,"Munich, Germany",3850,"Data Integration, ETL, Cloud"
+CloudNative Labs,https://cloudnative.dev,Amsterdam,Netherlands,S23,Active,"Pieter van Dijk (CEO), Emma Jansen (COO)",2,Software Development,11-50,28,"Amsterdam, Netherlands",890,"Kubernetes, DevOps, B2D"
+Paris CX,https://pariscx.fr,Paris,France,W24,Active,"Sophie Martin (CEO), Lucas Bernard (CTO)",4,Software Development,51-200,112,"Paris, France",2150,"Customer Experience, CRM, SaaS"
+Berlin DevTools,https://berlindevtools.de,Berlin,Germany,S25,Active,"Thomas Müller (CEO), Laura Weber (CPO)",1,Developer Tools,1-10,7,"Berlin, Germany",450,"Developer Tools, APIs, B2B"
+Rotterdam Analytics,https://rotterdamanlytics.nl,Rotterdam,Netherlands,W23,Active,"Erik de Vries (CEO), Sanne Bakker (CFO)",0,Analytics,11-50,19,"Rotterdam, Netherlands",620,"Business Intelligence, Data Visualization"
+Lyon Health AI,https://lyonhealth.ai,Lyon,France,S24,Active,"Antoine Dubois (CEO), Marie Laurent (CMO)",3,Health Tech,51-200,178,"Lyon, France",3100,"Healthcare, AI, Compliance"
+Hamburg Logistics,https://hamburglogistics.de,Hamburg,Germany,W25,Active,"Klaus Fischer (CEO), Nina Wagner (COO)",2,Logistics & Supply Chain,11-50,41,"Hamburg, Germany",1100,"Logistics, SaaS, SMB"
+Amsterdam Fintech,https://amsterdamfintech.nl,Amsterdam,Netherlands,S22,Acquired,"Daan Hendriks (CEO), Lisa Visser (CFO)",0,Financial Services,1-10,9,"Amsterdam, Netherlands",2300,"Fintech, Payments, API"
+Toulouse SpaceTech,https://toulousespace.fr,Toulouse,France,W23,Active,"Claire Moreau (CEO), Hugo Renard (CTO)",7,Aerospace,51-200,156,"Toulouse, France",5200,"Space, Satellite, Deep Tech"
+Berlin HR Platform,https://berlinhr.io,Berlin,Germany,S24,Active,"Markus Schulz (CEO), Julia Richter (CPO)",2,HR Tech,11-50,24,"Berlin, Germany",780,"HR, Recruiting, SaaS"
+Paris E-commerce,https://parisecom.fr,Paris,France,W25,Active,"Camille Petit (CEO), Thomas Leroy (CMO)",6,E-commerce,201-500,320,"Paris, France",8900,"E-commerce, Retail, Enterprise"
+Utrecht GreenTech,https://utrechtgreentech.nl,Utrecht,Netherlands,S23,Active,"Femke Bos (CEO), Lars van den Berg (CTO)",1,CleanTech,1-10,12,"Utrecht, Netherlands",340,"Sustainability, Energy, SaaS"
+Munich Security,https://munichsecurity.de,Munich,Germany,W24,Active,"Stefan Brandt (CEO), Helga Schwarz (CSO)",4,Cybersecurity,51-200,98,"Munich, Germany",4600,"Cybersecurity, Enterprise, Compliance"
+Bordeaux AgTech,https://bordeauxagtech.fr,Bordeaux,France,S25,Active,"Julien Fabre (CEO), Élodie Roux (COO)",0,AgTech,11-50,22,"Bordeaux, France",510,"Agriculture, IoT, SaaS"
+Eindhoven Industry 4.0,https://eindhovenindustry.nl,Eindhoven,Netherlands,W23,Active,"Sander Visser (CEO), Kim de Jong (CTO)",3,Industrial Automation,11-50,36,"Eindhoven, Netherlands",720,"Industry 4.0, IIoT, B2B”
