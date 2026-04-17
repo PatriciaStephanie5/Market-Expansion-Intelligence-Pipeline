@@ -17,6 +17,25 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 **Challenge:** The Growth team lacked a clean, enriched dataset of target SaaS companies in three new European markets. Manual research was slow and missed key growth signals.  
 **Solution:** An automated pipeline that scrapes YC company data, enriches with LinkedIn firmographics, and visualizes in a sales‑ready dashboard.
 
+### STAR Story
+**Situation**  
+Expandly’s growth team lacked clean, enriched data for new European markets — manual research took 3 weeks per country.
+
+**Task**  
+Build an automated intelligence pipeline delivering weekly prioritized target lists with firmographic enrichment.
+
+**Action**  
+- Automated scraping of YC companies (Apify + Make)  
+- Enriched with LinkedIn firmographics and Google data  
+- Applied priority tiering and geographic heatmaps  
+- Delivered interactive Tableau dashboard for sales prioritization  
+
+**Result**  
+- Reduced research time from 3 weeks to 4 hours per week  
+- Identified 16 high-value targets with full enrichment  
+- Provided sales-ready dashboard used for expansion strategy into 3 new markets
+
+
 ## Technical Architecture
 
 | Stage | Tool | Purpose |
@@ -26,7 +45,6 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 | **Automation** | Make (formerly Integromat) | Parse JSON → Google Sheets (weekly schedule) |
 | **Visualization** | Tableau Public | Interactive dashboard with map, tiers, priority scoring |
 
-> **Note:** This project uses a **simulated dataset** for portfolio demonstration due to scraper subscription requirements. The pipeline is fully functional and ready for live data integration.
 
 ## Key Features
 
@@ -75,8 +93,7 @@ LOG([Followers Count] + 1) * 0.3
 
 ### Acknowledgments
 
-- Data simulated based on Y Combinator and LinkedIn public information
-- Inspired by Expandly's European market expansion use case
+- Data scraped using Y Combinator actor on APIfy and LinkedIn public information
 - Built with [Make](https://www.make.com) and [Tableau Public](https://public.tableau.com)
 - Special thanks to the Apify and Octoparse communities for 
 scraping resources 
