@@ -88,6 +88,12 @@ END
 [Open Jobs Count] * 10 * 0.3 +
 LOG([Followers Count] + 1) * 0.3
 
+---
+### How to explore
+1. Open 'Master_target_list.csv'
+2. Run the make workflow ('integration JSON.blueprint.json')
+3. View live Tableau Dashboard (link provided above)
+
 
  ---
 
