@@ -87,7 +87,7 @@ LOG([Followers Count] + 1) * 0.3
 1. `Master_target_list.csv` – Final enriched dataset  
 2. `integration JSON.blueprint.json` – Make automation workflow  
 3. `MarketExpansionDashboard.twbx` – Tableau workbook  
-4. Live Dashboard: [Market Expansion Dashboard](https://public.tableau.com/app/profile/timba.patricia.stephanie)
+4. Live Dashboard: [Market Expansion Dashboard] (https://public.tableau.com/app/profile/timba.patricia.stephanie/viz/MarketExpansionDashboard_17760155743840/Dashboard1)
 
 **Client**: Expandly (Series B SaaS)  
 **Role**: Freelance GTM Data Analyst and Clay & Data Specialist  
